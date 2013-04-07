@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Articles</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<header>
+		<h1>Articles from Feedzilla</h1>
+	</header>
+
+	<div id="container">
+		<div id="featured">
+			<h1></h1>
+			<p class="article"></p>
+			<p class="url"></p>
+		</div>
+		<script id="template" type="text/x-handlebars-template">
+			{{#each this}}
+			<article data-index="{{index}}">
+				<h2>{{title}}</h2>
+				{{#if author}}
+				<p>Author: {{author}}</p>
+				{{/if}}
+				<p>Published: {{publish_date}}</p>
+			</article>
+			{{/each}}
+		</script>
+	</div>
+
+	<footer>
+		<p>By Martin Påhlsson 2013-04-01</p>
+	</footer>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://raw.github.com/wycats/handlebars.js/master/dist/handlebars.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>

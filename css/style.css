@@ -1,0 +1,42 @@
+body {
+	font: 100%/1.5 georgia;
+}
+
+#container {
+	margin: 0 5%;
+}
+@media (min-width: 43.375em){
+	article { 
+		width: 12.5em; 
+		float: left; 
+		margin: 0 0.5em 0.5em;
+		padding: 0 0.5em 0.5em;
+		min-height: 18em;
+	}
+}
+
+article {  
+	color: white;
+	margin: 0 0.5em 0.5em;
+	padding: 0 0.5em 0.5em;
+	cursor: pointer;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+	background:
+	radial-gradient(black 15%, transparent 16%) 0 0,
+	radial-gradient(black 15%, transparent 16%) 8px 8px,
+	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+	background-color:#282828;
+	background-size:16px 16px;
+
+}
+
+article h2 {
+	font-size: 1em;
+}
+footer { clear: left;}
