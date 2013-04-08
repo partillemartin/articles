@@ -2,7 +2,7 @@
 
 	var ArticleManager = {
 		init: function(config) {
-			this.url = 'http://api.feedzilla.com/v1/categories/26/articles.json';
+			this.url = 'js/articles.json';
 			this.template = config.template;
 			this.fetch();
 		},
