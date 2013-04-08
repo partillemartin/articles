@@ -47,6 +47,10 @@
 			var anchor = $('<a href="' + ArticleManager.articles[index].url + '">Read full article</a>');
 			el.find('p.url').html('');
 			el.find('p.url').append(anchor);
+
+			$('html, body').animate({
+				scrollTop: 0
+			}, 'fast');
 		}
 	}
 
