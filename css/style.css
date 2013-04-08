@@ -1,10 +1,34 @@
 body {
 	font: 100%/1.5 georgia;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	padding: 0 5%;
+	border-bottom: 0.2em solid #b4e391;
+}
+
+footer {
+	margin-top: 5%;
+	padding: 0 5%;
+	border-top: 0.2em solid #b4e391;	
 }
 
 #container {
 	margin: 0 5%;
 }
+
+#container:before,
+#container:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+#container:after {
+    clear: both;
+}
+
 @media (min-width: 43.375em){
 	article { 
 		width: 12.5em; 
@@ -16,7 +40,7 @@ body {
 }
 
 article {  
-	color: white;
+	color: #333;
 	margin: 0 0.5em 0.5em;
 	padding: 0 0.5em 0.5em;
 	cursor: pointer;
@@ -26,17 +50,15 @@ article {
 	-webkit-box-shadow: 0 8px 6px -6px black;
 	   -moz-box-shadow: 0 8px 6px -6px black;
 	        box-shadow: 0 8px 6px -6px black;
-	background:
-	radial-gradient(black 15%, transparent 16%) 0 0,
-	radial-gradient(black 15%, transparent 16%) 8px 8px,
-	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-	background-color:#282828;
-	background-size:16px 16px;
-
+	background: #b4e391; /* Old browsers */
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#b4e391), color-stop(0.5, #61c419), to(#b4e391));
+	background: -webkit-linear-gradient(#b4e391 0%, #61c419 50%, #b4e391 100%);
+	background: -moz-linear-gradient(#b4e391 0%, #61c419 50%, #b4e391 100%);
+	background: -o-linear-gradient(#b4e391 0%, #61c419 50%, #b4e391 100%);
+	background: linear-gradient(#b4e391 0%, #61c419 50%, #b4e391 100%); /* FF3.6+ */ /* Chrome,Safari4+ */ /* Chrome10+,Safari5.1+ */ /* Opera 11.10+ */ /* IE10+ */ /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#b4e391',GradientType=0 ); /* IE6-9 */
 }
 
 article h2 {
 	font-size: 1em;
 }
-footer { clear: left;}
